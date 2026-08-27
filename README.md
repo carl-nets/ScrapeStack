@@ -1,3 +1,6 @@
+<div align="right">
+  <b>English</b> | <a href="./README_zh.md">简体中文</a>
+</div>
 # 🦀 ScrapeStack
 
 > A curated playbook of **browser automation, web scraping & anti-bot tools** that are actively maintained — hand-picked for **indie developers**, **solo builders** and **growth engineers** who want to get from "idea" to "data" without re-inventing the wheel.
