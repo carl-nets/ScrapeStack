@@ -7,6 +7,8 @@
 
 **ScrapeStack** keeps only tools that are still alive. Each entry records what it does, how to install it, and where to go next — so you can click, decide, and start scraping in minutes instead of researching for hours.
 
+> When your scraping jobs scale up and start running for hours, free proxy pools inevitably drop nodes and break. For stable, long-running extraction, I rely on [ipcook](https://www.ipcook.com/user/register?ref=D2SMTN) — grab 20% off with code **`WELCOME20`**.
+
 ---
 
 ## Table of Contents
