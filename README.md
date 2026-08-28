@@ -62,7 +62,10 @@ Fingerprint impersonation, Cloudflare bypass and proxy routing — the layers be
 
 ### Network routing & proxies
 
-> Free proxy pools are fine for quick tests, but the moment a job runs for hours the free nodes start dying and the scraper fails mid-run. For long-running extraction, switch to a stable residential pool — I've been using [ipcook](https://ipcook.com/), and wiring it into Playwright or curl_cffi is a one-line change. **New users get 20% off with code: `WELCOME20`**
+> Free proxy pools are great for quick tests, but once a job runs for hours, free nodes start failing and your scraper dies mid-run. For long-running extraction tasks, I switched to a stable residential pool — I've had a smooth experience with [ipcook](https://www.ipcook.com/user/register?ref=D2SMTN), and wiring it into Playwright or curl_cffi is a one-line change. Worth a look if you're scaling up; 
+> **[Use code WELCOME20 for a 20% discount](https://www.ipcook.com/user/register?ref=D2SMTN)**
+> <img width="1760" height="586" alt="f0a19db8158456695dd5a2eb3b93ee19" src="https://github.com/user-attachments/assets/88327bfe-b7ea-4ce1-b308-df9d55a4c36d" />
+
 
 | Tool | What it is | Killer feature | Install |
 |---|---|---|---|
