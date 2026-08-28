@@ -62,7 +62,10 @@
 
 ### 网络路由与代理
 
-> 免费代理池做快速测试还不错，但任务一旦跑上几小时，免费节点开始失效、爬虫中途挂掉。长时间运行的抽取任务，建议改用稳定的住宅代理池——我一直在用 [ipcook](https://ipcook.com/)，接进 Playwright 或 curl_cffi 只需改一行配置。**新手注册 8 折优惠码：`WELCOME20`**
+> 免费代理池做快速测试还不错，但任务一旦跑上几小时，免费节点开始失效、爬虫中途挂掉。长时间运行的抽取任务，建议改用稳定的住宅代理池——我一直在用 [ipcook](https://www.ipcook.com/user/register?ref=D2SMTN)，接进 Playwright 或 curl_cffi 只需改一行配置。
+> **[新手注册 8 折优惠码：`WELCOME20`](https://www.ipcook.com/user/register?ref=D2SMTN)**
+> <img width="1760" height="586" alt="f0a19db8158456695dd5a2eb3b93ee19" src="https://github.com/user-attachments/assets/c71e1aa5-04e9-40e8-9c7c-bd5d65187f83" />
+
 
 | 工具 | 说明 | 作用 | 安装方式 |
 |---|---|---|---|
