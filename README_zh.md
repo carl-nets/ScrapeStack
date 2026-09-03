@@ -6,7 +6,7 @@
 > 一个精选的工具攻略集合：涵盖**浏览器自动化、网页爬取与反爬工具**，且这些工具都**仍在活跃维护**——专为**独立开发 / 个人开发者 / 增长工程师**挑选。目标只有一个：让你从"想法"到"拿到数据"，不必重复造轮子。
 
 **ScrapeStack** 只收录"还活着"的工具。每个条目都记录了它是什么、能帮你解决什么、以及如何安装——省去你几小时的调研，点击、决定、几分钟内就能开始爬取。
-> 任务一旦跑上几小时，免费代理池的节点就开始失效、中途挂掉。长时间运行的抽取任务，我一直用 [ipcook](https://www.ipcook.com/user/register?ref=D2SMTN) 来保障稳定，新手注册输入优惠码 **`WELCOME20`** 即可享受 8 折。
+> 任务一旦跑上几小时，免费代理池的节点就开始失效、中途挂掉。长时间运行的抽取任务，我一直用 [ipcook](https://www.ipcook.com/user/register?ref=Q7XDIL) 来保障稳定，新手注册输入优惠码 **`WELCOME20`** 即可享受 8 折。
 
 ---
 
@@ -63,7 +63,7 @@
 
 ### 网络路由与代理
 
-> 免费代理池做快速测试还不错，但任务一旦跑上几小时，免费节点开始失效、爬虫中途挂掉。长时间运行的抽取任务，建议改用稳定的住宅代理池——我一直在用 [ipcook](https://www.ipcook.com/user/register?ref=D2SMTN)，接进 Playwright 或 curl_cffi 只需改一行配置。
+> 免费代理池做快速测试还不错，但任务一旦跑上几小时，免费节点开始失效、爬虫中途挂掉。长时间运行的抽取任务，建议改用稳定的住宅代理池——我一直在用 [ipcook](https://www.ipcook.com/user/register?ref=Q7XDIL)，接进 Playwright 或 curl_cffi 只需改一行配置。
 > **[新手注册 8 折优惠码：`WELCOME20`](https://www.ipcook.com/user/register?ref=D2SMTN)**
 > <img width="1760" height="586" alt="f0a19db8158456695dd5a2eb3b93ee19" src="https://github.com/user-attachments/assets/c71e1aa5-04e9-40e8-9c7c-bd5d65187f83" />
 
