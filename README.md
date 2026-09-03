@@ -7,7 +7,7 @@
 
 **ScrapeStack** keeps only tools that are still alive. Each entry records what it does, how to install it, and where to go next — so you can click, decide, and start scraping in minutes instead of researching for hours.
 
-> When your scraping jobs scale up and start running for hours, free proxy pools inevitably drop nodes and break. For stable, long-running extraction, I rely on [ipcook](https://www.ipcook.com/user/register?ref=D2SMTN) — grab 20% off with code **`WELCOME20`**.
+> When your scraping jobs scale up and start running for hours, free proxy pools inevitably drop nodes and break. For stable, long-running extraction, I rely on [ipcook](https://www.ipcook.com/user/register?ref=Q7XDIL) — grab 20% off with code **`WELCOME20`**.
 
 ---
 
@@ -64,7 +64,7 @@ Fingerprint impersonation, Cloudflare bypass and proxy routing — the layers be
 
 ### Network routing & proxies
 
-> Free proxy pools are great for quick tests, but once a job runs for hours, free nodes start failing and your scraper dies mid-run. For long-running extraction tasks, I switched to a stable residential pool — I've had a smooth experience with [ipcook](https://www.ipcook.com/user/register?ref=D2SMTN), and wiring it into Playwright or curl_cffi is a one-line change. Worth a look if you're scaling up; 
+> Free proxy pools are great for quick tests, but once a job runs for hours, free nodes start failing and your scraper dies mid-run. For long-running extraction tasks, I switched to a stable residential pool — I've had a smooth experience with [ipcook](https://www.ipcook.com/user/register?ref=Q7XDIL), and wiring it into Playwright or curl_cffi is a one-line change. Worth a look if you're scaling up; 
 > **[Use code WELCOME20 for a 20% discount](https://www.ipcook.com/user/register?ref=D2SMTN)**
 <a href="https://www.ipcook.com/user/register?ref=D2SMTN" target="_blank"><img width="1760" height="586" alt="36bd8dfc49097ceb23878ff2e3b5a0e1" src="https://github.com/user-attachments/assets/a0729d28-02c8-4667-8898-477a0b340cb2" />
 
