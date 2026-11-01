@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+.github/report.txt
+.github/bad.txt
