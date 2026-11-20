@@ -209,7 +209,7 @@ Scraping is the core, but automation, AI browsing agents & clean data export mat
 Respect each site's `robots.txt` and Terms of Service, obey rate limits, and only collect data you're entitled to. This list is about building reliable pipelines — not breaking into systems that don't want us there.
 
 **Why is there a sponsor in the list?**
-A single, clearly-labelled sponsored slot (ipcook) funds the maintenance work. <sup>\*</sup> The list itself stays independent — affiliate status never decides what gets listed.
+A single, clearly-labelled sponsored slot (🎁ipcook) funds the maintenance work. <sup>\*</sup> The list itself stays independent — affiliate status never decides what gets listed.
 
 **License**
 The list, research and curation in this repo are shared under MIT. Each listed tool keeps its own license.
