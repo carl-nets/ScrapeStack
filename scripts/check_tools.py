@@ -43,16 +43,24 @@ def api_get(path: str, token: str | None) -> dict:
         return json.load(resp)
 
 
-def fetch_repo(repo: str, token: str | None) -> dict | None:
+def fetch_repo(repo: str, token: str | None, cache: dict) -> dict | None:
     try:
-        return api_get(f"/repos/{repo}", token)
+        data = api_get(f"/repos/{repo}", token)
+        cache[repo] = {k: data.get(k) for k in ("pushed_at", "stargazers_count", "archived")}
+        return data
     except urllib.error.HTTPError as e:
         if e.code == 403:
-            print(f"!! rate limited while fetching {repo} — set GH_TOKEN", file=sys.stderr)
+            print(f"!! rate limited for {repo} — falling back to cache", file=sys.stderr)
         else:
             print(f"!! HTTP {e.code} for {repo}", file=sys.stderr)
     except Exception as e:  # noqa: BLE001
         print(f"!! failed to fetch {repo}: {e}", file=sys.stderr)
+    if repo in cache:
+        return {
+            "pushed_at": cache[repo].get("pushed_at"),
+            "stargazers_count": cache[repo].get("stargazers_count"),
+            "archived": cache[repo].get("archived"),
+        }
     return None
 
 
@@ -72,10 +80,10 @@ def verdict_for(repo: dict | None, watch: bool, since_days: int) -> tuple[str, s
     return "✅", "healthy"
 
 
-def render_table(tools: list[dict], token: str | None, since_days: int, report_lines: list[str]) -> str:
+def render_table(tools: list[dict], token: str | None, since_days: int, report_lines: list[str], cache: dict) -> str:
     rows = []
     for t in tools:
-        repo = fetch_repo(t["gh"], token) if t.get("gh") else None
+        repo = fetch_repo(t["gh"], token, cache) if t.get("gh") else None
         if repo is not None:
             pushed = repo.get("pushed_at", "")[:10] or "—"
             stars = repo.get("stargazers_count", 0)
@@ -99,18 +107,35 @@ def render_table(tools: list[dict], token: str | None, since_days: int, report_l
     return "\n".join(rows)
 
 
+def load_cache(path: Path) -> dict:
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def save_cache(cache: dict, path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", default="STATUS.md")
     ap.add_argument("--since-days", type=int, default=DEFAULT_SINCE_DAYS)
+    ap.add_argument("--cache", default=".github/api_cache.json",
+                    help="JSON cache of GitHub repo metadata; seeded automatically on success "
+                         "and used as fallback when rate-limited (survives the 60/hr limit).")
     args = ap.parse_args()
 
     data = json.loads((ROOT / "tools.json").read_text(encoding="utf-8"))
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     checked = dt.date.today().isoformat()
 
+    cache = load_cache(ROOT / args.cache)
     report_lines: list[str] = []
-    table = render_table(data["tools"], token, args.since_days, report_lines)
+    table = render_table(data["tools"], token, args.since_days, report_lines, cache)
+    save_cache(cache, ROOT / args.cache)
 
     counts = {"✅": 0, "⚠️": 0, "❌": 0}
     for line in report_lines:

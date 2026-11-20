@@ -5,3 +5,4 @@ __pycache__/
 venv/
 .github/report.txt
 .github/bad.txt
+.github/api_cache.json

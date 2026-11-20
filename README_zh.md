@@ -78,7 +78,6 @@
 | 工具 | 说明 | 作用 | 安装方式 |
 |---|---|---|---|
 | [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) | 用真实浏览器组件代理，绕开 Cloudflare 与 DDoS-GUARD 防护。 | 自动过 Cloudflare 挑战，不用每次手动点。 | `docker run -p 8191:8191 flaresolverr/flaresolverr` |
-| [cloudscraper](https://github.com/VeNoMouS/cloudscraper) | Python 模块，绕过 Cloudflare 的反爬 / 防攻击模式页。⚠️ 近期维护放缓，见 [STATUS.md](STATUS.md)。 | 直接在 Python 里爬 Cloudflare 保护的页面。 | `pip install cloudscraper` |
 | [buster](https://github.com/dessant/buster) | 浏览器扩展，通过 reCAPTCHA 音频挑战自动解答验证码。 | 手动/轻量爬取时，跳过人工验证码。 | 浏览器商店搜索安装 |
 
 ### 解析与提取
@@ -101,6 +100,9 @@
 |---|---|---|---|
 | [Scrapy](https://github.com/scrapy/scrapy) | 高层 Python 爬取框架，自带管道、调度与导出。 | 一个框架搞定"爬取 + 解析 + 导出"，可规模化。 | `pip install scrapy` |
 | [botasaurus](https://github.com/omkarcloud/botasaurus) | 自带反检测、代理轮换、任务调度与图形界面调试的爬虫框架。 | 出厂自带久经考验的反检测配置，还能开着网页实时盯任务。 | `pip install botasaurus` |
+| [Scrapling](https://github.com/D4Vinci/Scrapling) | 新一代一体化爬虫框架：普通 HTTP 请求、无头浏览器与反检测集成在同一套 API 里。 | 一个 import 就集成了 requests + Playwright 式自动化与内置反机器人绕过，全场景覆盖。 | `pip install scrapling` |
+| [Crawl4AI](https://github.com/unclecode/crawl4ai) | AI 驱动的爬虫与提取工具：把任意网页变成干净、可直接投喂大模型的结构化数据。 | 基于浏览器的抓取 + 结构化、模型友好的输出，是 2026 年 AI 数据管线的标配。 | `pip install crawl4ai` |
+| [Crawlee](https://github.com/apify/crawlee) | Node.js 爬虫与浏览器自动化库：Cheerio / Puppeteer / Playwright 和托管浏览器池统一在一套 API 下。 | 成熟的 JS 版对应物，内置队列、重试与代理轮换，补齐清单里的 Node 生态缺口。 | `npm install crawlee` |
 
 ### 网络路由与代理
 
@@ -127,7 +129,6 @@
 | [CSVKit](https://github.com/wireservice/csvkit) | CSV 瑞士军刀：转换、过滤、分析、清洗一条龙。 | 一行命令把 JSON/Excel 转成 CSV——不用写代码。 | `pip install csvkit` |
 | [Miller](https://github.com/johnkerl/miller) | 面向带列名数据的 awk/sed；支持 CSV/JSON/TSV 互转。 | 不写脚本也能过滤、重塑大数据集。 | `brew install miller` |
 | [DuckDB](https://github.com/duckdb/duckdb) | 进程内列式分析数据库：一条 SQL 直接查 CSV / JSON / Parquet，无需导入。 | 爬下来的数据直接开查，一行导入代码都不用写。 | `pip install duckdb` |
-| [csv-diff](https://github.com/simonw/csv-diff) | CLI 工具，对比并输出两份 CSV/JSON 文件的新增/删除行。⚠️ 活跃度低但功能稳定，见 [STATUS.md](STATUS.md)。 | 立刻看出两份数据 dump 之间改了什么。 | `pip install csv-diff` |
 | [csvs-to-sqlite](https://github.com/simonw/csvs-to-sqlite) | 把一个或多个 CSV/TSV 转为 SQLite 数据库。 | 一条命令把 CSV 变成可查询的数据库。 | `pip install csvs-to-sqlite` |
 | [SQLite-Utils](https://github.com/simonw/sqlite-utils) | 命令行 + Python 工具：操作 SQLite，快速导入 CSV/JSON、搭建接口。 | 把抓到的文件变成本地接口，不用起服务器。 | `pip install sqlite-utils` |
 | [Datasette](https://github.com/simonw/datasette) | 一条命令把 SQLite 数据库变成可浏览的网站 + 只读 JSON API。 | 把爬取结果用一个网址分享出去，而不是发文件。 | `pip install datasette` |
@@ -191,7 +192,7 @@
 `jq`、CSVKit 一行把 JSON 变 CSV；Miller 做重塑；DuckDB 直接 SQL 查数据 dump；`pandas` 是经典之选，配 XlsxWriter 就能产出漂亮的 `.xlsx` 报表。
 
 **被 Cloudflare 拦了怎么办？**
-FlareSolverr 和 cloudscraper 是入门首选；更硬的反爬就换反检测浏览器（Camoufox、nodriver）或住宅代理（ipcook），通常能打破僵局。永远先尊重 `robots.txt` 和站点条款。
+FlareSolverr 和 curl_cffi 是入门首选；更硬的反爬就换反检测浏览器（Camoufox、nodriver）或住宅代理（ipcook），通常能打破僵局。永远先尊重 `robots.txt` 和站点条款。
 
 **为什么要只收录活跃维护的工具？**
 因为上游停更是爬虫的隐形杀手。一个工具悄悄死掉，会连带你半夜还在跑的数据管道一起崩。

@@ -78,7 +78,6 @@ Tools that automatically clear **Cloudflare challenge pages, DDoS-GUARD and CAPT
 | Tool | What it is | Killer feature | Install |
 |---|---|---|---|
 | [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) | Proxy server that clears Cloudflare & DDoS-GUARD using a real browser. | Auto-solve Cloudflare challenges — no manual clicking per request. | `docker run -p 8191:8191 flaresolverr/flaresolverr` |
-| [cloudscraper](https://github.com/VeNoMouS/cloudscraper) | Python module to bypass Cloudflare's anti-bot / IUAM page. ⚠️ Maintained more slowly lately — see [STATUS.md](STATUS.md). | Scrape Cloudflare-protected pages straight from Python. | `pip install cloudscraper` |
 | [buster](https://github.com/dessant/buster) | Browser extension that solves CAPTCHAs via reCAPTCHA audio challenges. | Skip human CAPTCHA checks during manual or light scraping. | Browser add-on store |
 
 ### Parsing & extraction
@@ -101,6 +100,9 @@ Full-scale **web scraping frameworks** with scheduling, pipelines, proxy rotatio
 |---|---|---|---|
 | [Scrapy](https://github.com/scrapy/scrapy) | High-level Python scraping framework with pipelines, schedulers and exporters. | One framework for crawl + extract + export at scale. | `pip install scrapy` |
 | [botasaurus](https://github.com/omkarcloud/botasaurus) | Scraping framework with built-in anti-detection, proxy rotation, task scheduling and a GUI for debugging jobs. | Battle-tested anti-detect defaults plus a ready-made UI to watch jobs live. | `pip install botasaurus` |
+| [Scrapling](https://github.com/D4Vinci/Scrapling) | All-in-one modern scraping framework — plain HTTP, headless browsers and anti-detection behind one simple API. | One import covers everything from requests to Playwright-style automation with built-in anti-bot evasion. | `pip install scrapling` |
+| [Crawl4AI](https://github.com/unclecode/crawl4ai) | AI-powered crawler & extractor that turns any page into clean, LLM-ready structured data. | Browser-based crawling with structured, model-friendly output — the 2026 standard for AI pipelines. | `pip install crawl4ai` |
+| [Crawlee](https://github.com/apify/crawlee) | Node.js scraping & browser automation library — Cheerio, Puppeteer, Playwright and managed browser pools under one API. | The mature JS companion to Scrapy-style scraping, with queues, retries and proxy rotation built in. | `npm install crawlee` |
 
 ### Network routing & proxies
 
@@ -127,7 +129,6 @@ Turn scraped JSON/HTML into **CSV, Excel, SQLite** — clean, analyze and publis
 | [CSVKit](https://github.com/wireservice/csvkit) | Swiss-army knife of CSV tools to convert, filter, analyze & clean. | Convert JSON/Excel to CSV in one line — no code. | `pip install csvkit` |
 | [Miller](https://github.com/johnkerl/miller) | awk/sed for name-indexed data; converts CSV/JSON/TSV. | Filter & reshape large datasets without writing scripts. | `brew install miller` |
 | [DuckDB](https://github.com/duckdb/duckdb) | In-process columnar analytics database — query CSV/JSON/Parquet files directly with SQL, zero import. | Ad-hoc analytics on scraped dumps without writing a single load script. | `pip install duckdb` |
-| [csv-diff](https://github.com/simonw/csv-diff) | Diff two CSV/JSON files and show added/removed rows. ⚠️ Low activity, but stable for what it does — see [STATUS.md](STATUS.md). | Instantly see what changed between two dumps. | `pip install csv-diff` |
 | [csvs-to-sqlite](https://github.com/simonw/csvs-to-sqlite) | Convert one or many CSV/TSV into a SQLite database. | Go from CSV to a queryable DB in one command. | `pip install csvs-to-sqlite` |
 | [SQLite-Utils](https://github.com/simonw/sqlite-utils) | CLI + Python utility for SQLite; import CSV/JSON, build APIs quickly. | Turn scraped files into a local API — no server needed. | `pip install sqlite-utils` |
 | [Datasette](https://github.com/simonw/datasette) | Turn a SQLite database into a browsable website and read-only JSON API in one command. | Share a scraped dataset as a URL instead of a file. | `pip install datasette` |
@@ -194,7 +195,7 @@ It depends on the wall you're hitting: `httpx` / `curl_cffi` for HTTP-level craw
 `jq` and CSVKit turn JSON into CSV in one line, Miller reshapes it, DuckDB lets you query raw dumps directly with SQL, `pandas` is the classic workhorse, and pandas + XlsxWriter produce polished `.xlsx` reports.
 
 **How do I bypass Cloudflare when scraping?**
-FlareSolverr and cloudscraper are the go-to starting points; for harder walls, anti-detect browsers (Camoufox, nodriver) or a residential proxy (ipcook) usually tip the balance. Always respect `robots.txt` and the site's ToS.
+FlareSolverr and curl_cffi are the go-to starting points; for harder walls, anti-detect browsers (Camoufox, nodriver) or a residential proxy (ipcook) usually tip the balance. Always respect `robots.txt` and the site's ToS.
 
 **Why only actively-maintained tools?**
 Because upstream rot is the silent killer of scrapers. A tool that dies breaks your pipeline you depend on at 2am.
