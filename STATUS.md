@@ -8,44 +8,44 @@
 
 | Tool | Repo | Last push | ⭐ Stars | Archived | Verdict |
 |---|---|---|---|---|---|
-| Playwright | [microsoft/playwright](https://github.com/microsoft/playwright) | 2026-11-22 | 100843 | no | ✅ |
-| Puppeteer | [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | 2026-11-22 | 95888 | no | ✅ |
+| Playwright | [microsoft/playwright](https://github.com/microsoft/playwright) | 2026-11-23 | 100863 | no | ✅ |
+| Puppeteer | [puppeteer/puppeteer](https://github.com/puppeteer/puppeteer) | 2026-11-22 | 95892 | no | ✅ |
 | Selenium | [SeleniumHQ/selenium](https://github.com/SeleniumHQ/selenium) | 2026-11-23 | 34606 | no | ✅ |
-| Browserless | [browserless/browserless](https://github.com/browserless/browserless) | 2026-11-23 | 13957 | no | ✅ |
+| Browserless | [browserless/browserless](https://github.com/browserless/browserless) | 2026-11-23 | 13958 | no | ✅ |
 | Chromedp | [chromedp/chromedp](https://github.com/chromedp/chromedp) | 2026-11-18 | 13379 | no | ✅ |
 | DrissionPage | [g1879/DrissionPage](https://github.com/g1879/DrissionPage) | 2026-10-27 | 12585 | no | ✅ |
-| nodriver | [ultrafunkamsterdam/nodriver](https://github.com/ultrafunkamsterdam/nodriver) | 2026-10-26 | 4958 | no | ✅ |
-| Camoufox | [daijro/camoufox](https://github.com/daijro/camoufox) | 2026-11-22 | 13579 | no | ✅ |
-| browser-use | [browser-use/browser-use](https://github.com/browser-use/browser-use) | 2026-11-22 | 121798 | no | ✅ |
-| Stagehand | [browserbase/stagehand](https://github.com/browserbase/stagehand) | 2026-11-21 | 26120 | no | ✅ |
-| Skyvern | [Skyvern-AI/skyvern](https://github.com/Skyvern-AI/skyvern) | 2026-11-23 | 23495 | no | ✅ |
+| nodriver | [ultrafunkamsterdam/nodriver](https://github.com/ultrafunkamsterdam/nodriver) | 2026-10-26 | 4959 | no | ✅ |
+| Camoufox | [daijro/camoufox](https://github.com/daijro/camoufox) | 2026-11-22 | 13586 | no | ✅ |
+| browser-use | [browser-use/browser-use](https://github.com/browser-use/browser-use) | 2026-11-22 | 121810 | no | ✅ |
+| Stagehand | [browserbase/stagehand](https://github.com/browserbase/stagehand) | 2026-11-21 | 26121 | no | ✅ |
+| Skyvern | [Skyvern-AI/skyvern](https://github.com/Skyvern-AI/skyvern) | 2026-11-23 | 23496 | no | ✅ |
 | curl_cffi | [lexiforest/curl_cffi](https://github.com/lexiforest/curl_cffi) | 2026-11-23 | 6912 | no | ✅ |
 | httpx | [encode/httpx](https://github.com/encode/httpx) | 2026-11-16 | 15839 | no | ✅ |
-| FlareSolverr | [FlareSolverr/FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) | 2026-10-24 | 16288 | no | ✅ |
+| FlareSolverr | [FlareSolverr/FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) | 2026-10-24 | 16292 | no | ✅ |
 | buster | [dessant/buster](https://github.com/dessant/buster) | 2026-11-16 | 9406 | no | ✅ |
-| Scrapy | [scrapy/scrapy](https://github.com/scrapy/scrapy) | 2026-11-19 | 65545 | no | ✅ |
+| Scrapy | [scrapy/scrapy](https://github.com/scrapy/scrapy) | 2026-11-19 | 65550 | no | ✅ |
 | botasaurus | [omkarcloud/botasaurus](https://github.com/omkarcloud/botasaurus) | 2026-11-13 | 5864 | no | ✅ |
 | BeautifulSoup4 | [official site](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) | — | — | — | n/a |
 | parsel | [scrapy/parsel](https://github.com/scrapy/parsel) | 2026-11-12 | 1368 | no | ✅ |
-| lxml | [lxml/lxml](https://github.com/lxml/lxml) | 2026-11-22 | 3077 | no | ✅ |
+| lxml | [lxml/lxml](https://github.com/lxml/lxml) | 2026-11-23 | 3077 | no | ✅ |
 | selectolax | [rushter/selectolax](https://github.com/rushter/selectolax) | 2026-11-10 | 1717 | no | ✅ |
-| trafilatura | [adbar/trafilatura](https://github.com/adbar/trafilatura) | 2026-11-22 | 7161 | no | ✅ |
-| ProxyPool | [jhao104/proxy_pool](https://github.com/jhao104/proxy_pool) | 2026-06-15 | 23799 | no | ✅ |
+| trafilatura | [adbar/trafilatura](https://github.com/adbar/trafilatura) | 2026-11-22 | 7163 | no | ✅ |
+| ProxyPool | [jhao104/proxy_pool](https://github.com/jhao104/proxy_pool) | 2026-06-15 | 23801 | no | ✅ |
 | scrapy-rotating-proxies | [TeamHG-Memex/scrapy-rotating-proxies](https://github.com/TeamHG-Memex/scrapy-rotating-proxies) | 2026-04-08 | 772 | no | ✅ |
-| jq | [jqlang/jq](https://github.com/jqlang/jq) | 2026-11-02 | 36224 | no | ✅ |
+| jq | [jqlang/jq](https://github.com/jqlang/jq) | 2026-11-02 | 36227 | no | ✅ |
 | CSVKit | [wireservice/csvkit](https://github.com/wireservice/csvkit) | 2026-11-09 | 6419 | no | ✅ |
 | Miller | [johnkerl/miller](https://github.com/johnkerl/miller) | 2026-11-22 | 10069 | no | ✅ |
-| DuckDB | [duckdb/duckdb](https://github.com/duckdb/duckdb) | 2026-11-20 | 43261 | no | ✅ |
+| DuckDB | [duckdb/duckdb](https://github.com/duckdb/duckdb) | 2026-11-23 | 43268 | no | ✅ |
 | csvs-to-sqlite | [simonw/csvs-to-sqlite](https://github.com/simonw/csvs-to-sqlite) | 2026-07-15 | 939 | no | ✅ |
-| SQLite-Utils | [simonw/sqlite-utils](https://github.com/simonw/sqlite-utils) | 2026-11-12 | 2217 | no | ✅ |
-| Datasette | [simonw/datasette](https://github.com/simonw/datasette) | 2026-11-23 | 11639 | no | ✅ |
+| SQLite-Utils | [simonw/sqlite-utils](https://github.com/simonw/sqlite-utils) | 2026-11-12 | 2220 | no | ✅ |
+| Datasette | [simonw/datasette](https://github.com/simonw/datasette) | 2026-11-23 | 11641 | no | ✅ |
 | visidata | [saulpw/visidata](https://github.com/saulpw/visidata) | 2026-11-11 | 9481 | no | ✅ |
 | XlsxWriter | [jmcnamara/XlsxWriter](https://github.com/jmcnamara/XlsxWriter) | 2026-11-22 | 3997 | no | ✅ |
-| Apache Superset | [apache/superset](https://github.com/apache/superset) | 2026-11-23 | 75624 | no | ✅ |
-| pandas | [pandas-dev/pandas](https://github.com/pandas-dev/pandas) | 2026-11-22 | 50606 | no | ✅ |
-| Scrapling | [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | 2026-11-22 | 105112 | no | ✅ |
-| Crawl4AI | [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | 2026-11-23 | 87689 | no | ✅ |
-| Crawlee | [apify/crawlee](https://github.com/apify/crawlee) | 2026-11-23 | 26522 | no | ✅ |
+| Apache Superset | [apache/superset](https://github.com/apache/superset) | 2026-11-23 | 75630 | no | ✅ |
+| pandas | [pandas-dev/pandas](https://github.com/pandas-dev/pandas) | 2026-11-22 | 50608 | no | ✅ |
+| Scrapling | [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | 2026-11-23 | 105156 | no | ✅ |
+| Crawl4AI | [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | 2026-11-23 | 87704 | no | ✅ |
+| Crawlee | [apify/crawlee](https://github.com/apify/crawlee) | 2026-11-23 | 26523 | no | ✅ |
 
 **37 healthy · 0 watch · 0 archived**
 
